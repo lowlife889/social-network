@@ -1,0 +1,131 @@
+.create-container{
+  width: 100%;
+  display: flex;
+  height: 100%;
+  min-height: fit-content;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: auto;
+  animation: charge .5s;
+}
+.create-form{
+  margin-top: 50px;
+  width: 50%;
+  min-width: 500px;
+  height: fit-content;
+  margin-bottom: 50px;
+}
+.botones-container{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.custom-file-upload{
+  color: #451a03;
+  box-shadow: 5px 5px 10px #1105003f;
+  background-color: #fffbeb;
+  display: flex;
+  font-weight: 700;
+  font-size: 15px;
+  width: fit-content;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 2vw;
+  width: 15vw;
+  min-width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s;
+  height: 65px;
+  
+}
+.custom-file-upload:hover {
+  background-color: #ece9d9;
+}
+.btn2{
+  width: 65px;
+  height: 65px;
+  padding-top: 7px;
+  font-size: 30px;
+  color: #451a03;
+  box-shadow: 5px 5px 10px #1105003f;
+  background-color: #fffbeb;
+  font-weight: 700;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .2s;
+}
+.btn2:hover{
+  background-color: #ece9d9;
+}
+.desc{
+  color: #451a03;
+  box-shadow: 5px 5px 10px #1105003f;
+  background-color: #fffbeb;
+  outline: none;
+  border: none;
+  height: 200px;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 20px;
+  transition: all .2s;
+  resize: none;
+}
+
+.desc:focus{
+  background-color: #ece9d9;
+  height: 500px;
+}
+.desc1{
+  height: 500px;
+}
+.check{
+  font-size: 40px;
+}
+/* Ocultar el input file */
+input[type="file"] {
+  display: none;
+}
+.tick{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.create-form h2{
+  align-self: center;
+  font-size: 24px;
+  font-weight: 400;
+  width: fit-content;
+  padding: 10px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #451a0379;
+}
+.tick{
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.ok{
+  display: none;
+}
+@media (max-width:525px){
+  .create-form{
+    min-width: 30px;
+    width: 95%;
+  }
+}
+@keyframes charge {
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

@@ -1,0 +1,284 @@
+.perfil-container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.publicaciones-container{
+  animation: charge 1s;
+}
+.header{
+  display: flex;
+  gap: 10vw;
+}
+
+.data-container{
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  gap: 40px;
+}
+.perfil-img{
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: rgba(0, 0, 0, 0.219);
+  box-shadow: 5px 5px 10px #1105003f;
+}
+.perfil-container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.back-container{
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  animation: charge .3s;
+  align-items: center;
+  justify-content: flex-end;
+}
+.back{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: all .15s;
+  cursor: pointer;
+  animation: charge 1s;
+}
+.back:hover{
+  scale: 1.1;
+}
+.line1{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.line1 h2{
+  font-size: 20px;
+  font-weight: 500;
+  width: 200px;
+}
+
+.stats-container{
+  display: flex;
+  gap: 2vw;
+  font-size: 14px;
+  justify-content: flex-end;
+}
+.stats{
+  display: flex;
+  gap: 5px;
+}
+.posts-container{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 70px;
+  
+}
+@keyframes charge {
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.posts-container h3{
+  font-size: 16px;
+  font-weight: 400;
+  width: fit-content;
+  padding: 10px 15px;
+  border-top: 1px solid #451a03;
+}
+.post{
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.post-img{
+  width: 16.5vw;
+  height: 16.5vw;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: all .15s;
+  cursor: pointer;
+  box-shadow:2px 2px 10px #1a090054;
+}
+.post-img:active{
+  opacity: .9;
+
+}
+.post-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  width: 50vw;
+  
+}
+
+
+.btn11{
+  width: 140px;
+  height: 35px;
+  font-size: 14px;
+  color: #451a03;
+  border-radius: 6px;
+  box-shadow: 5px 5px 10px #1105003f;
+  background-color: #fffbeb;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn11:hover{
+  background-color: #ece9d9;
+}
+.btn3{
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  font-size: 14px;
+  color: #451a03;
+  border-radius: 6px;
+  margin-left: 5px;
+  box-shadow: 5px 5px 10px #1105003f;
+  background-color: #fffbeb;
+  cursor: pointer;
+  transition: all .2s;
+}
+.onAnimation{
+  animation: 1.5s charge;
+}
+.btn3:hover{
+  background-color: #ece9d9;
+}
+.header{
+  width: 50vw;
+  gap: 3vw;
+  justify-content: center;
+}
+
+@media (max-width:1315px){
+  .post-img{
+    width:30vw;
+    height: 30vw;
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all .15s;
+    cursor: pointer;
+  }
+  .header{
+    width: 90vw;
+    justify-content: center;
+  }
+  .post-container{
+    width: 91vw;
+  }
+  .header{
+    width: 90vw;
+  }
+}
+
+@media (max-width:730px) {
+  .data-container h2{
+    width: 150px;
+  }
+  .stats-container{
+    justify-content: flex-end;
+  }
+  .line1{
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  .btn11{
+    align-self: flex-start;
+  }
+}
+@media (max-width:600px){
+  .header{
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    justify-content: center;
+  }
+  .data-container{
+    height: 200px;
+    width: 300px;
+  }
+  .line1{
+    width: fit-content;
+  }
+}
+@media (max-width:510px){
+  .perfil-container{
+    width: 100%;
+  }
+  .header{
+    padding: 0px 5px;
+    flex-wrap: wrap;
+  }
+  .post-img{
+    min-height: 90px;
+    min-width: 90px;
+  }
+}
+@media (max-width:467px){
+  .header{
+    gap: 5px;
+  }
+  .data-container{
+    align-items: center;
+    height: fit-content;
+  }
+  .line1{
+    justify-content: center;
+  }
+  .perfil-img{
+    width: 140px;
+    height: 140px;
+    border-radius: 80px;
+  }
+  .data-container h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .stats-container{
+    justify-content: center;
+  }
+  .post-img{
+    width:29.6vw;
+    height: 29.6vw;
+  }
+}
+@media (max-width:350px){
+  .line1{
+    justify-content: center;
+  }
+  .btn11{
+    font-size: 13px;
+    width: 120px;
+  }
+}
+
+@media (max-width:300px){
+
+  .post-container{
+    width: 98vw;
+  }
+}
