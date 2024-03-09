@@ -2,9 +2,9 @@ import { NextResponse } from "next/server";
 import { v2 as cloudinary } from "cloudinary";
 import prisma from "@/libs/prisma";
 cloudinary.config({
-  cloud_name: "driszyrgu",
-  api_key: "456272356289637",
-  api_secret: "hqrlduO-aO-dmanX3HvFW74CLow",
+  cloud_name: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET,
   secure:true
 });
 
